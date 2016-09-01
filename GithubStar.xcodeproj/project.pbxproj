@@ -14,6 +14,11 @@
 		D70868FC1D771EE2005D43BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70868FA1D771EE2005D43BF /* Main.storyboard */; };
 		D70869071D771EE2005D43BF /* GithubStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70869061D771EE2005D43BF /* GithubStarTests.swift */; };
 		D70869121D771EE2005D43BF /* GithubStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70869111D771EE2005D43BF /* GithubStarUITests.swift */; };
+		D71E54E81D78720D001A5B39 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71E54E51D787204001A5B39 /* Keychain.framework */; };
+		D71E54E91D78720D001A5B39 /* Keychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D71E54E51D787204001A5B39 /* Keychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D71E54ED1D787213001A5B39 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71E54CC1D7871FC001A5B39 /* OAuth2.framework */; };
+		D71E54EE1D787213001A5B39 /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D71E54CC1D7871FC001A5B39 /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D71E54F41D787243001A5B39 /* GithubOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E54F31D787243001A5B39 /* GithubOAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,106 @@
 			remoteGlobalIDString = D70868ED1D771EE2005D43BF;
 			remoteInfo = GithubStar;
 		};
+		D71E54CB1D7871FC001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209471942772800736F1A;
+			remoteInfo = OAuth2OSX;
+		};
+		D71E54CD1D7871FC001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEDB8624193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		D71E54CF1D7871FC001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 659854461C5B3BEA00237D39;
+			remoteInfo = OAuth2tvOS;
+		};
+		D71E54D11D7871FC001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209A219427DFE00736F1A;
+			remoteInfo = OAuth2Tests;
+		};
+		D71E54DC1D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE5151C661147005EABC7;
+			remoteInfo = Keychain;
+		};
+		D71E54DE1D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE51F1C661147005EABC7;
+			remoteInfo = KeychainTests;
+		};
+		D71E54E01D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE54A1C664025005EABC7;
+			remoteInfo = "Keychain watchOS";
+		};
+		D71E54E21D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE5581C66409D005EABC7;
+			remoteInfo = "Keychain tvOS";
+		};
+		D71E54E41D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE5681C66410E005EABC7;
+			remoteInfo = "Keychain OSX";
+		};
+		D71E54E61D787204001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96BE5711C66410E005EABC7;
+			remoteInfo = "Keychain OSXTests";
+		};
+		D71E54EA1D78720D001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C96BE5671C66410E005EABC7;
+			remoteInfo = "Keychain OSX";
+		};
+		D71E54EF1D787213001A5B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE209461942772800736F1A;
+			remoteInfo = OAuth2OSX;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D71E54EC1D78720D001A5B39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D71E54E91D78720D001A5B39 /* Keychain.framework in Embed Frameworks */,
+				D71E54EE1D787213001A5B39 /* OAuth2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D70868EE1D771EE2005D43BF /* GithubStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +151,9 @@
 		D708690D1D771EE2005D43BF /* GithubStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70869111D771EE2005D43BF /* GithubStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStarUITests.swift; sourceTree = "<group>"; };
 		D70869131D771EE2005D43BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = "<group>"; };
+		D71E54D31D787204001A5B39 /* Keychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Keychain.xcodeproj; path = OAuth2/SwiftKeychain/Keychain.xcodeproj; sourceTree = "<group>"; };
+		D71E54F31D787243001A5B39 /* GithubOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubOAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71E54E81D78720D001A5B39 /* Keychain.framework in Frameworks */,
+				D71E54ED1D787213001A5B39 /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +186,8 @@
 		D70868E51D771EE1005D43BF = {
 			isa = PBXGroup;
 			children = (
+				D71E54D31D787204001A5B39 /* Keychain.xcodeproj */,
+				D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */,
 				D70868F01D771EE2005D43BF /* GithubStar */,
 				D70869051D771EE2005D43BF /* GithubStarTests */,
 				D70869101D771EE2005D43BF /* GithubStarUITests */,
@@ -99,6 +210,7 @@
 			children = (
 				D70868F11D771EE2005D43BF /* AppDelegate.swift */,
 				D70868F31D771EE2005D43BF /* ViewController.swift */,
+				D71E54F31D787243001A5B39 /* GithubOAuth.swift */,
 				D70868F81D771EE2005D43BF /* Assets.xcassets */,
 				D70868FA1D771EE2005D43BF /* Main.storyboard */,
 				D70868FD1D771EE2005D43BF /* Info.plist */,
@@ -125,6 +237,30 @@
 			path = GithubStarUITests;
 			sourceTree = "<group>";
 		};
+		D71E54C51D7871FC001A5B39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D71E54CC1D7871FC001A5B39 /* OAuth2.framework */,
+				D71E54CE1D7871FC001A5B39 /* OAuth2.framework */,
+				D71E54D01D7871FC001A5B39 /* OAuth2.framework */,
+				D71E54D21D7871FC001A5B39 /* OAuth2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D71E54D41D787204001A5B39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D71E54DD1D787204001A5B39 /* Keychain.framework */,
+				D71E54DF1D787204001A5B39 /* KeychainTests.xctest */,
+				D71E54E11D787204001A5B39 /* Keychain.framework */,
+				D71E54E31D787204001A5B39 /* Keychain.framework */,
+				D71E54E51D787204001A5B39 /* Keychain.framework */,
+				D71E54E71D787204001A5B39 /* Keychain OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +271,13 @@
 				D70868EA1D771EE2005D43BF /* Sources */,
 				D70868EB1D771EE2005D43BF /* Frameworks */,
 				D70868EC1D771EE2005D43BF /* Resources */,
+				D71E54EC1D78720D001A5B39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D71E54EB1D78720D001A5B39 /* PBXTargetDependency */,
+				D71E54F01D787213001A5B39 /* PBXTargetDependency */,
 			);
 			name = GithubStar;
 			productName = GithubStar;
@@ -215,6 +354,16 @@
 			mainGroup = D70868E51D771EE1005D43BF;
 			productRefGroup = D70868EF1D771EE2005D43BF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D71E54D41D787204001A5B39 /* Products */;
+					ProjectRef = D71E54D31D787204001A5B39 /* Keychain.xcodeproj */;
+				},
+				{
+					ProductGroup = D71E54C51D7871FC001A5B39 /* Products */;
+					ProjectRef = D71E54C41D7871FC001A5B39 /* OAuth2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D70868ED1D771EE2005D43BF /* GithubStar */,
@@ -223,6 +372,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D71E54CC1D7871FC001A5B39 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = D71E54CB1D7871FC001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54CE1D7871FC001A5B39 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = D71E54CD1D7871FC001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54D01D7871FC001A5B39 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = D71E54CF1D7871FC001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54D21D7871FC001A5B39 /* OAuth2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuth2Tests.xctest;
+			remoteRef = D71E54D11D7871FC001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54DD1D787204001A5B39 /* Keychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Keychain.framework;
+			remoteRef = D71E54DC1D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54DF1D787204001A5B39 /* KeychainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KeychainTests.xctest;
+			remoteRef = D71E54DE1D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54E11D787204001A5B39 /* Keychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Keychain.framework;
+			remoteRef = D71E54E01D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54E31D787204001A5B39 /* Keychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Keychain.framework;
+			remoteRef = D71E54E21D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54E51D787204001A5B39 /* Keychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Keychain.framework;
+			remoteRef = D71E54E41D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D71E54E71D787204001A5B39 /* Keychain OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Keychain OSXTests.xctest";
+			remoteRef = D71E54E61D787204001A5B39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D70868EC1D771EE2005D43BF /* Resources */ = {
@@ -255,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71E54F41D787243001A5B39 /* GithubOAuth.swift in Sources */,
 				D70868F41D771EE2005D43BF /* ViewController.swift in Sources */,
 				D70868F21D771EE2005D43BF /* AppDelegate.swift in Sources */,
 				D70868F71D771EE2005D43BF /* GithubStar.xcdatamodeld in Sources */,
@@ -289,6 +512,16 @@
 			isa = PBXTargetDependency;
 			target = D70868ED1D771EE2005D43BF /* GithubStar */;
 			targetProxy = D708690E1D771EE2005D43BF /* PBXContainerItemProxy */;
+		};
+		D71E54EB1D78720D001A5B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Keychain OSX";
+			targetProxy = D71E54EA1D78720D001A5B39 /* PBXContainerItemProxy */;
+		};
+		D71E54F01D787213001A5B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuth2OSX;
+			targetProxy = D71E54EF1D787213001A5B39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,6 +624,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GithubStar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yuankun.GithubStar;
@@ -403,6 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GithubStar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yuankun.GithubStar;
@@ -479,6 +714,7 @@
 				D70869181D771EE2005D43BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D70869191D771EE2005D43BF /* Build configuration list for PBXNativeTarget "GithubStarTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +723,7 @@
 				D708691B1D771EE2005D43BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D708691C1D771EE2005D43BF /* Build configuration list for PBXNativeTarget "GithubStarUITests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +732,7 @@
 				D708691E1D771EE2005D43BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

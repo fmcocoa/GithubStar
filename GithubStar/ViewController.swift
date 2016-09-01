@@ -8,12 +8,20 @@
 
 import Cocoa
 
+enum ServiceError: ErrorType {
+    case NoViewController
+    case IncorrectViewControllerClass
+}
+
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let wc = storyboard?.instantiateControllerWithIdentifier("SingleService") as? NSWindowController {
+            wc.showWindow(nil)
+        }
     }
 
     override var representedObject: AnyObject? {
@@ -21,7 +29,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 
